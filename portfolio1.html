@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="portfolio1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#Portfolio" class="logo"><span>Anurag.</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="C:\\Users\\anura\\my-project\\Anurag_Khanderao_resume (2).pdf" download="Resume">Resume</a>
+        </nav>
+        <!-- Add a button for mobile navigation -->
+        <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+            <i class="bx bx-menu"></i>
+        </button>
+    </header>
+
+    <section class="home" id="home">
+        <!-- Home content here -->
+        <div class="Home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Anurag Khanderao</h1>
+            <h3>And I'm a <span>Web Developer</span></h3>
+            <p>Passionate web developer dedicated to crafting exceptional online experiences.
+                Proficient in front-end technologies, including HTML, CSS, and JavaScript.
+                Skilled in back-end development and database management 
+                (MySQL). Committed to responsive design, security, and continuous learning. 
+                I thrive in collaborative environments, bringing creativity and precision to every project. 
+                Let's build something amazing together!
+            </p>
+            <div class="Social-media">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.linkedin.com/in/anurag-khanderao-031702259/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-discord'></i></a>
+            </div>
+            <a href="C:\\Users\\anura\\my-project\\Anurag_Khanderao_resume (2).pdf" download="Resume" class="btn">Resume</a>
+        </div>
+
+        <div class="home-image">
+            <!-- Dynamically updated image source -->
+            <img id="profile-picture" src="" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <!-- About content here -->
+        <div class="about-content">
+            <h2 class="heading">About<span> Me</span></h2>
+            <h3>a Web Developer</h3>
+            <p>Hello! I'm Anurag Khanderao, a dedicated
+                 Computer Engineering student at NMiet.
+                  Passionate about technology, I specialize in Web Development and Java programming. 
+                  My academic journey includes impactful projects . 
+                  Eager to contribute my skills and learn from dynamic tech environments.
+                 Let's connect and explore the possibilities!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <!-- Projects content here -->
+        <h2 class="heading"><span>Projects</span></h2>
+
+        <div class="project-container">
+            <!-- Project boxes will be dynamically generated here -->
+            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/Screenshot 2024-03-30 201049.png')">
+                <!-- Dynamically updated image source -->
+                <img id="project1-image" src="" alt="project 1">
+                <div class="project-layer">
+                    <h4>Quora log in page</h4>
+                    <!-- Add the link to the stored project document -->
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        
+            <!-- Repeat the above structure for other projects -->
+        
+            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/PUNCTURE DETECTION FOR TWO-WHEELER ELECTRONIC 1.pdf.pdf')">
+                <img id="project2-image" src="" alt="project 2">
+                <div class="project-layer">
+                    <h4>Punction detection system in e-two wheelers</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        
+            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/lpg gas indicator and safety device (4).pdf')">
+                <img id="project3-image" src="" alt="project 3">
+                <div class="project-layer">
+                    <h4>LPG gas indicator and safety device</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        
+            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/Screenshot 2024-03-18 163609.png')">
+                <img id="project4-image" src="" alt="project 4">
+                <div class="project-layer">
+                    <h4>Portfolio</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        
+            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/Screenshot 2024-01-30 204217.png')">
+                <img id="project5-image" src="" alt="project 5">
+                <div class="project-layer">
+                    <h4>Landing page</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        
+            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/Screenshot 2024-01-30 211809.png')">
+                <img id="project6-image" src="" alt="project 6">
+                <div class="project-layer">
+                    <h4>Simple Calculator</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+        
+
+
+    <section class="contact" id="contact">
+        <!-- Contact form here -->
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form id="contactForm" action="/api/contact" method="POST">
+            <div class="input-box">
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" required>
+                <input type="text" id="emailSubject" name="emailSubject" placeholder="Email Subject" required>
+            </div>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <button type="button" id="sendMessageBtn" class="btn">Send Message</button>
+        </form>
+        
+    </section>
+
+    <footer class="footer">
+        <!-- Footer content here -->
+        <div class="footer-text">
+            <p>&copy; 2024 Anurag Khanderao. All rights reserved.</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.linkedin.com/in/anurag-khanderao-031702259/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-discord'></i></a>
+        </div>
+    </footer>
+
+    <script src="portfolio1.js" >
+    </script>
+</body>
+</html>
