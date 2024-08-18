@@ -16,7 +16,7 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            <a href="C:\\Users\\anura\\my-project\\Anurag_Khanderao_resume (2).pdf" download="Resume">Resume</a>
+            <a href="C:\Users\anura\OneDrive\Desktop\Resume\Anurag_Khanderao_resume.pdf" download="Resume">Resume</a>
         </nav>
         <!-- Add a button for mobile navigation -->
         <button class="menu-toggle" aria-label="Toggle Navigation Menu">
@@ -43,12 +43,11 @@
                 <a href="#"><i class='bx bxl-instagram'></i></a>
                 <a href="#"><i class='bx bxl-discord'></i></a>
             </div>
-            <a href="C:\\Users\\anura\\my-project\\Anurag_Khanderao_resume (2).pdf" download="Resume" class="btn">Resume</a>
+            <a href="C:\Users\anura\OneDrive\Desktop\Resume\Anurag_Khanderao_resume.pdf" download="Resume" class="btn">Resume</a>
         </div>
 
         <div class="home-image">
-            <!-- Dynamically updated image source -->
-            <img id="profile-picture" src="" alt="Profile Picture">
+            <img src="C:\Users\anura\OneDrive\Desktop\portfolio1 - Copy\images\profile2.jpg" alt="profile picture">
         </div>
     </section>
 
@@ -73,78 +72,73 @@
 
         <div class="project-container">
             <!-- Project boxes will be dynamically generated here -->
-            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/Screenshot 2024-03-30 201049.png')">
-                <!-- Dynamically updated image source -->
-                <img id="project1-image" src="" alt="project 1">
+            <div class="project-box">
+                <img src="C:\Users\anura\OneDrive\Desktop\portfolio1 - Copy\images\project1.jpg" alt="project 1">
                 <div class="project-layer">
-                    <h4>Quora log in page</h4>
-                    <!-- Add the link to the stored project document -->
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>First Aid</h4>
+                    <a href="Files/portable cooling device.pdf"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        
-            <!-- Repeat the above structure for other projects -->
-        
-            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/PUNCTURE DETECTION FOR TWO-WHEELER ELECTRONIC 1.pdf.pdf')">
-                <img id="project2-image" src="" alt="project 2">
+
+            <div class="project-box">
+                <img src="C:\Users\anura\OneDrive\Desktop\portfolio1 - Copy\images\project2.jpg" alt="project 2">
                 <div class="project-layer">
                     <h4>Punction detection system in e-two wheelers</h4>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="Files/PUNCTURE DETECTION FOR TWO-WHEELER ELECTRONIC 1.pdf"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        
-            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/lpg gas indicator and safety device (4).pdf')">
-                <img id="project3-image" src="" alt="project 3">
+
+            <div class="project-box">
+                <img src="C:\Users\anura\OneDrive\Desktop\portfolio1 - Copy\images\project3.jpg" alt="project 3">
                 <div class="project-layer">
                     <h4>LPG gas indicator and safety device</h4>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="Files/LPG GAS INDICATOR AND SAFTY DEVICE.pdf"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        
-            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/Screenshot 2024-03-18 163609.png')">
-                <img id="project4-image" src="" alt="project 4">
+
+            <div class="project-box">
+                <img src="C:\Users\anura\OneDrive\Desktop\portfolio1 - Copy\images\project4.jpg" alt="project 4">
                 <div class="project-layer">
                     <h4>Portfolio</h4>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        
-            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/Screenshot 2024-01-30 204217.png')">
-                <img id="project5-image" src="" alt="project 5">
+
+            <div class="project-box">
+                <img src="C:\Users\anura\OneDrive\Desktop\portfolio1 - Copy\images\project5.jpg" alt="project 5">
                 <div class="project-layer">
                     <h4>Landing page</h4>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-        
-            <div class="project-box"  onclick="openDocument('C:/Users/anura/my-project/Screenshot 2024-01-30 211809.png')">
-                <img id="project6-image" src="" alt="project 6">
+
+            <div class="project-box">
+                <img src="C:\Users\anura\OneDrive\Desktop\portfolio1 - Copy\images\project6.jpg" alt="prject 6">
                 <div class="project-layer">
                     <h4>Simple Calculator</h4>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
-        
-
+        </div>
+    </section>
 
     <section class="contact" id="contact">
         <!-- Contact form here -->
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form id="contactForm" action="/api/contact" method="POST">
+        <form id="contactForm" action="#">
             <div class="input-box">
-                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
-                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="text" id="fullName" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number" required>
-                <input type="text" id="emailSubject" name="emailSubject" placeholder="Email Subject" required>
+                <input type="text" id="mobileNumber" placeholder="Mobile number">
+                <input type="text" id="emailSubject" placeholder="Email Subject">
             </div>
-            <textarea id="message" name="message" placeholder="Message" required></textarea>
-            <button type="button" id="sendMessageBtn" class="btn">Send Message</button>
+            <textarea id="message" placeholder="Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
         </form>
-        
     </section>
 
     <footer class="footer">
@@ -160,7 +154,6 @@
         </div>
     </footer>
 
-    <script src="portfolio1.js" >
-    </script>
+    <script src="portfolio1.js"></script>
 </body>
 </html>

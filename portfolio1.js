@@ -7,34 +7,35 @@ menuToggle.addEventListener('click', () => {
     // Toggle the 'active' class on the navigation menu
     navbar.classList.toggle('active');
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     // Update profile picture
     const profilePicture = document.getElementById("profile-picture");
-    profilePicture.src = "C:/Users/anura/my-project/images/profile2.jpg"; // Update with the actual path to the profile picture
+    profilePicture.src = "images/profile2.jpg"; // Update with the actual path to the profile picture
 
     // Update project images
     const project1Image = document.getElementById("project1-image");
-    project1Image.src = "C:/Users/anura/my-project/Screenshot 2024-03-30 201049.png"; // Update with the actual path to project 1 image
+    project1Image.src = "images/project1.jpg"; // Update with the actual path to project 1 image
 
     const project2Image = document.getElementById("project2-image");
-    project2Image.src = "C:/Users/anura/my-project/images/project2.jpg"; // Update with the actual path to project 2 image
+    project2Image.src = "images/project2.jpg"; // Update with the actual path to project 2 image
 
     const project3Image = document.getElementById("project3-image");
-    project3Image.src = "C:/Users/anura/my-project/images/project3.jpg"; // Update with the actual path to project 3 image
+    project3Image.src = "images/project3.jpg"; // Update with the actual path to project 3 image
 
     const project4Image = document.getElementById("project4-image");
-    project4Image.src = "C:/Users/anura/my-project/images/project4.jpg"; // Update with the actual path to project 4 image
+    project4Image.src = "images/project4.jpg"; // Update with the actual path to project 4 image
 
     const project5Image = document.getElementById("project5-image");
-    project5Image.src = "C:/Users/anura/my-project/images/project5.jpg"; // Update with the actual path to project 5 image
+    project5Image.src = "images/project5.jpg"; // Update with the actual path to project 5 image
 
     const project6Image = document.getElementById("project6-image");
-    project6Image.src = "C:/Users/anura/my-project/images/project6.jpg"; // Update with the actual path to project 6 image
+    project6Image.src = "images/project6.jpg"; // Update with the actual path to project 6 image
 });
+
 function openDocument(documentUrl) {
     window.open(documentUrl, '_blank');
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
     // Get reference to the Send Message button
@@ -81,4 +82,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-

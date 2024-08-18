@@ -11,17 +11,19 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(bodyParser.json());
+app.use('/assets', express.static('assets'));
+
 
 // MongoDB connection string and database name
 const uri = process.env.MONGODB_URI;
-const dbName = uri ? uri.substring(uri.lastIndexOf('/') + 1) : ''; // Extract database name from URI
+const dbName = uri ? uri.split('/').pop() : ''; // Extract database name from URI
 
 // Handle contact form submission
 app.post('/api/contact', upload.single('profilePicture'), async (req, res) => {
     try {
         // Extract form data from request body
         const { fullName, email, mobileNumber, emailSubject, message } = req.body;
-        const profilePicture = req.file.path; // Get the file path of the uploaded profile picture
+        const profilePicture = req.file ? req.file.path : ''; // Get the file path of the uploaded profile picture
 
         // Connect to MongoDB
         const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -29,7 +31,7 @@ app.post('/api/contact', upload.single('profilePicture'), async (req, res) => {
         const db = client.db(dbName);
 
         // Specify the collection name
-        const collection = db.collection('projectdb');
+        const collection = db.collection('contacts');
 
         // Create a new contact document with the form data
         const newContact = {
@@ -38,7 +40,7 @@ app.post('/api/contact', upload.single('profilePicture'), async (req, res) => {
             mobileNumber,
             emailSubject,
             message,
-           profilePicture
+            profilePicture
         };
 
         // Insert the contact document into the database
